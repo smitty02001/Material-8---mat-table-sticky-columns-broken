@@ -1,4 +1,5 @@
-<div class="example-container mat-elevation-z8">
+<div class="gutter">
+  <div class="example-container mat-elevation-z8">
   <table mat-table [dataSource]="dataSource">
 
     <!-- Name Column -->
@@ -26,16 +27,22 @@
     </ng-container>
 
     <!-- Star Column -->
-    <ng-container matColumnDef="star" stickyEnd>
+    <ng-container matColumnDef="star">
       <th mat-header-cell *matHeaderCellDef></th>
       <td mat-cell *matCellDef="let element">
         <mat-icon>more_vert</mat-icon>
       </td>
     </ng-container>
 
+      <ng-container matColumnDef="yolo" stickyEnd>
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element"> {{element.yolo}} </td>
+    </ng-container>
+
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+  </div>
 </div>
 
 

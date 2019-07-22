@@ -1,11 +1,16 @@
+.gutter {
+  /* padding: 0 3vw; */
+
+}
 .example-container {
   height: 400px;
-  width: 550px;
+  max-width: 100%;
   overflow: auto;
+  border: 1px solid black;
 }
 
 table {
-  width: 800px;
+  width: 100%;
 }
 
 td.mat-column-star {
@@ -18,9 +23,27 @@ th.mat-column-position, td.mat-column-position {
 }
 
 .mat-table-sticky:first-child {
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid blue;
 }
 
 .mat-table-sticky:last-child {
-  border-left: 1px solid #e0e0e0;
+  border-left: 1px solid red;
 }
+
+th.mat-column-position, td.mat-column-position {
+  padding-left: 8px;
+}
+
+td:nth-child(4) div {
+  width: 200px;
+}
+
+td.mat-cell {
+  padding: 10px;
+}
+
+td div {
+  min-width: 50px;
+  max-width: 200px;
+}
+
